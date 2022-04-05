@@ -1,5 +1,17 @@
-.App {
+
+.navBar {
+  color: black;
+  background-color: white;
   text-align: center;
+}
+
+img{
+  max-width:6cm;
+  max-height: 6cm;
+}
+
+.titulo {
+  color: black;
 }
 
 .App-logo {
