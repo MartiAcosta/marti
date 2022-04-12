@@ -1,21 +1,73 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Producto from './Producto';
 import Tienda from './Tienda';
 import Navbar from './components/NavBar'; 
+import Imagenes from './components/imagenes';
+
+const data = [
+{
+  id: 1,
+  thumbnail: "https://www.cetrogar.com.ar/media/catalog/product/c/m/cm3202-1.jpg?width=500&height=500&canvas=500:500&quality=80&bg-color=255,255,255&fit=bounds",
+  title: "Monitor",
+  year: "2019",
+  mark: "Hp",
+  price: "$5200",
+},
+{
+  id: 2,
+  thumbnail: "https://http2.mlstatic.com/D_NQ_NP_961384-MLA49035888609_022022-O.webp",
+  title: "Gabinete",
+  year: "2019",
+  mark: "Hp",
+  price: "$5200",
+},
+{
+  id: 3,
+  thumbnail: "https://www.cetrogar.com.ar/media/catalog/product/c/m/cm3193-1.jpg?width=500&height=500&canvas=500:500&quality=80&bg-color=255,255,255&fit=bounds",
+  title: "Mouse",
+  year: "2019",
+  mark: "Hp",
+  price: "$5200",
+},
+{
+  id: 4,
+  thumbnail: "https://www.cetrogar.com.ar/media/catalog/product/c/m/cm3290-1.jpg?width=500&height=500&canvas=500:500&quality=80&bg-color=255,255,255&fit=bounds",
+  title: "Teclado",
+  year: "2019",
+  mark: "Hp",
+  price: "$5200",
+},
+{
+  id: 5,
+  thumbnail: "https://www.cetrogar.com.ar/media/catalog/product/c/m/cm3076_4_.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+  title: "Impesora",
+  year: "2019",
+  mark: "Hp",
+  price: "$5200",
+},
+]
 
 const App = () => {
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar/>
+    {
+      data.map(item =>
+        <Imagenes 
+        key={item.di}
+        thumbnail={item.thumbnail}
+        title={item.title}
+        year={item.year} 
+        mark={item.mark}
+        price={item.price}/>
+    )
+    }
+
     <div className="App"> 
-    <hr/>
-    <Producto producto="Monitor" marca= "Hp" precio="$20.000"/>
-    <Producto producto="Mouse" marca= "Logitech" precio="$3.500"/>
     <Tienda nombre="Martina Acosta"/>
     </div>
     </>
   );
-} 
+}
 
 export default App;

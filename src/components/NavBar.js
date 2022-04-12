@@ -1,6 +1,8 @@
+
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
         <div class="container-fluid">
     <a class="navbar-brand" href="#">Pc Tecnica</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,13 +17,14 @@ const Navbar = () => {
         <a class="nav-link" href="#">Contacto</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Nosotroa</a>
+        <a class="nav-link" href="#">Nosotros</a>
         </li>
     </ul>
     </div>
 </div>
 </nav>
-    );
+</header>
+);
 }
 
 export default Navbar;
