@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tienda from './Tienda';
 import Navbar from './components/NavBar'; 
-import Imagenes from './components/imagines';
+import Imagenes from './components/Imagenes';
 
 const data = [
 {
