@@ -11,6 +11,7 @@ const Imagenes = (props) => {
     }
 
     return (
+        <>
         <div className="imagen-container">
             <div className="imagen-imagen">
                 <img src={props.thumbnail}/>   
@@ -24,6 +25,7 @@ const Imagenes = (props) => {
                 <p>{props.price}</p>
             </div>
         </div>
+        </>
     );
 } 
 

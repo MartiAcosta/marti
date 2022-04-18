@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tienda from './Tienda';
 import Navbar from './components/NavBar'; 
-import Imagenes from './components/imagenes';
+import Imagenes from './components/imagines';
 
 const data = [
 {
@@ -51,8 +51,7 @@ const App = () => {
   return (
     <>
     <Navbar/>
-    {
-      data.map(item =>
+    {data.map(item =>
         <Imagenes 
         key={item.di}
         thumbnail={item.thumbnail}
@@ -60,14 +59,10 @@ const App = () => {
         year={item.year} 
         mark={item.mark}
         price={item.price}/>
-    )
-    }
-
-    <div className="App"> 
-    <Tienda nombre="Martina Acosta"/>
-    </div>
+    )}
+    <div className="App"> <Tienda nombre="Martina Acosta"/></div>
     </>
   );
 }
 
-export default App;
+export default App; 
