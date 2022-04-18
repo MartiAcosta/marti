@@ -1,8 +1,10 @@
+import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tienda from './Tienda';
 import Navbar from './components/NavBar'; 
-import Imagenes from './components/Imagenes';
+import ItemCount from './components/ItemCount';
+
 
 const data = [
 {
@@ -52,7 +54,7 @@ const App = () => {
     <>
     <Navbar/>
     {data.map(item =>
-        <Imagenes 
+        <ItemCount
         key={item.di}
         thumbnail={item.thumbnail}
         title={item.title}
