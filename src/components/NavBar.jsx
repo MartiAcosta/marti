@@ -1,33 +1,28 @@
-import React from 'react'
+import { AppBar } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
+import { Wrapper, Logo, MenuItem, Left, Center, Right } from './styledComponents';
 
-const Navbar = () => {
+const NavBar = () => {
     return (
-        <> 
-        <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
-        <div class="container-fluid">
-    <a class="navbar-brand" href="#">Pc Tecnica</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Tienda</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Nosotros</a>
-        </li>
-    </ul>
-    </div>
-</div>
-</nav>
-</header>
-</>
-);
+        <AppBar position="relative">
+            <Wrapper>
+                <Left>
+                    <Link to='/' style={{textDecoration: "none", color: "white"}}><Logo>Pc Tecnica</Logo></Link>
+                </Left>
+                <Center>
+                    <Link to='/category/9' style={{textDecoration: "none", color: "white"}}><MenuItem>Monitor</MenuItem></Link>
+                    <Link to='/category/1' style={{textDecoration: "none", color: "white"}}><MenuItem>Notebook</MenuItem></Link>
+                    <Link to='/category/5' style={{textDecoration: "none", color: "white"}}><MenuItem>Accesorios</MenuItem></Link>                    
+                </Center>
+                <Right>
+                    <MenuItem></MenuItem>
+                    <MenuItem></MenuItem>
+                    <MenuItem><CartWidget /></MenuItem>
+                </Right>
+            </Wrapper>
+        </AppBar>
+    );
 }
 
-export default Navbar;
+export default NavBar;
