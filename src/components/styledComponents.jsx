@@ -3,9 +3,12 @@ import styled from "styled-components";
 //NavBar
 const Wrapper = styled.div`
     padding: 10px 20px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
+    }
 `;
 
 const Left = styled.div`
@@ -22,7 +25,7 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
-    font-weight: bold;
+    font-family:Arial;
 `;
 
 const Right = styled.div`

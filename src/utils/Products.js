@@ -1,131 +1,157 @@
 const products = [{
         id: 1,
-        name: "Agua Con Gas 1,5 lts",
-        stock: 0,
-        cost: 140,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
-        capacity: 1500,
+        name: "Notebook Dell Inspiron 5510 blue 15.6",
+        stock: 3,
+        cost: 203.255,
+        description: "Pantalla con gran impacto visual. Su pantalla de 15.6 y 1920x1080 px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle.",
         image: [
-            "https://www.paruolo.com.ar/media/catalog/product/3/9/39046_b_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:"
+            "https://http2.mlstatic.com/D_NQ_NP_881565-MLA49043957207_022022-O.webp"
         ],
-        reviews: [{
-            "comment": "Muy rico y refrescante",
-            "rating": "4"
-        }]
+        categoryId: 11,
+        category: {
+            name: "Notebook",
+            id: 11,
+            }
         },
         {
         id: 2,
-        name: "Agua Sin Gas 1,5 lts",
-        stock: 100,
-        cost: 140,
+        name: "Notebook 2 En 1 Hp X360 14-dy0502la Core I3 8gb 256gb Touch",
+        stock: 10,
+        cost: 164.799,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
-        capacity: 1500,
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316114/BodegasDelSur/01_1619706076.webp"
+            "https://http2.mlstatic.com/D_NQ_NP_686307-MLA49636754391_042022-O.webp"
         ],
-        reviews: [{
-            "comment": "Muy rico y refrescante",
-            "rating": "4"
-        }]
+        categoryId: 11,
+        category: {
+        name: "Notebook",
+        id: 11,
+        }
     },
     {
         id: 3,
-        name: "Alambrado Chardonnay 750 ml",
-        stock: 92,
-        cost: 575,
-        description: "Se muestra con tonos amarillo verdoso de intensidad media. En la nariz encontramos frutas blancas maduras, peras, manzanas y banana, frutas tropicales, con notas de la maduración en barricas sobre las borras como vainilla, manteca y miel. Buen volumen, complejo, maduro, con una entrada untuosa en la boca, buen desarrollo y largo final. Se repiten las notas frutales del aroma.",
-        capacity: 750,
+        name: "Kit Pc Gabinete Iqual Cm-5907 Mouse Teclado + Fuente 600w",
+        stock: 12,
+        cost: 4.799,
+        description: "KIT DE PC GABINETE IQUAL CM-5907 CON PERIFÉRICOS Y FUENTE DE 600W CM-5907",
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316095/BodegasDelSur/01_1605541215.jpg"
+            "https://http2.mlstatic.com/D_NQ_NP_686774-MLA49531628226_032022-O.webp"
         ],
-        reviews: []
-    },
+        categoryId: 22,
+        category: {
+        name: "Notebook",
+        id: 22,
+        }
+        },
     {
         id: 4,
-        name: "Alambrado Malbec 750ml",
-        stock: 100,
-        cost: 575,
-        description: "Rojo violáceo, profundo y vivaz con visos azulados. Nariz de frutos rojos y negros como cerezas, cassis, ciruelas y moras, integrados con los aromas de maduración en barrica como vainilla, tabaco y chocolate. Entrada en boca sedosa, buena estructura, con una marcada presencia de frutas rojas, taninos amables y dulces, concluyendo en un largo final de boca.",
-        capacity: 750,
+        name: "NOTEBOOK ACER A314-22-R3M4 AMD ATHLON",
+        stock: 6,
+        cost: 57.999,
+        description: "Notebook de 14 LED. Procesador AMD Athlon Silver 3050U (2.3 hasta 3.2 GHz). Placa de video UMA. Bateria Li-ion 36WH. Bluetooth 4.1. USB 3,2 X2 / 2,0 x1. Wi Fi 802.11ac wireless LAN. Camara frontal 640 x 480. Sistema operativo Windows 10 Home 64Bits. Microfono incorporado.",
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316095/BodegasDelSur/01_1605540337.jpg"
+            "http://medias.musimundo.com/medias/00508016-145402-145402-01-145402-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w3NDEwOXxpbWFnZS9qcGVnfGg2OS9oZWIvMTAzNTMzMzU3MzAyMDYvMDA1MDgwMTYtMTQ1NDAyLTE0NTQwMl8wMS0xNDU0MDJfMDEuanBnX3NpemU1MTV8N2IwMGIzYzdkOTk2ZjFmYjU1ZTE4MGFmZDQ2YzU3NDU0MWMwY2E4NzE5Nzg2ZWExYTczZDBkZGI0NzE3NDQwNQ"
         ],
-        reviews: []
+        categoryId: 11,
+        category: {
+        name: "Notebook",
+        id: 11,
+        }
     },
     {
         id: 5,
-        name: "Alambrado Malbec 750 ml con Estuche",
-        stock: 100,
-        cost: 765,
-        description: "La linea Alambrado esta compuesta por vinos elegantes y de estilo moderno, donde se destacan claramente las características frutales de las variedades que los componen. Su paso por madera les otorgan una complejidad muy particular, acompañando de manera armónica y sutil la calidad obtenida desde el viñedo. Poseen un potencial de guarda de entre 4 y 6 años.\nAlambrado Malbec fue elaborado a partir de una cuidosa selección de uvas cosechadas de forma manual y criado en barricas de roble francés durante 10 meses.",
-        capacity: 750,
+        name: "NOTEBOOK DELL JH94XWH INTEL CORE I3",
+        stock: 2,
+        cost: 86.999,
+        description: "Notebook. Procesador Intel Core I3-1005G1. Velocidad del procesador 1.20 GHz. Pantalla Led 15. Capacidad 1Tb. Memoria RAM 4G. Placa de video UHD 360. Wi Fi. Bluetooth. Lector de tarjetas. Camara web. SO Windows 10 Home. Microfono incorporado. Entrada jack 3.5 audio. USB. HDMI. Teclado numerico. Bateria 3 cell 42WHR.",
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316116/BodegasDelSur/01_1621366255.jpg"
+            "http://medias.musimundo.com/medias/00353006-142720-142720-01-142720-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w3MDEzN3xpbWFnZS9qcGVnfGhjMi9oY2QvMTAyNDYyMTU3OTQ3MTgvMDAzNTMwMDYtMTQyNzIwLTE0MjcyMF8wMS0xNDI3MjBfMDEuanBnX3NpemU1MTV8OWM0Y2Y5OWMxN2ZjMzJlYjNjMTA2ODNhZjY3MzVhNTNlMDA2NTVkNzljZDlhODcyOWQwY2I4NmZiNzQ2Zjg2Yg"
         ],
-        reviews: []
+        categoryId: 11,
+        category: {
+        name: "Notebook",
+        id: 11,
+        }
     },
     {
         id: 6,
-        name: "Altos del Plata Cabernet Sauvignon 750 ml",
-        stock: 100,
-        cost: 490,
-        description: "Color: Rojo rubí con sutiles reflejos terracota. Aroma: Se destacan los aromas a frutas negras como higos, ciruelas y confitura de moras, armónicamente acompañados por notas de pimiento rojo, regaliz y tostado. Boca: Se percibe la untuosidad de la fruta madura junto a una elegante estructura tánica y persistencia en boca.",
+        name: "NOTEBOOK LENOVO 81UV00B6AR AMD",
+        stock: 6,
+        cost: 54.999,
+        description: "IdeaPad S145 Diseñado para un rendimiento duradero, el IdeaPad S145 ofrece un potente procesador AMD con un diseño elegante y ligero. Perfecto para realizar tus tareas informáticas diarias desde cualquier parte, este portátil duradero de 35,56 cm (14') ofrece un magnífico sonido con una variedad de opciones de almacenamiento seguras y rápidas",
         capacity: 750,
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316118/BodegasDelSur/01_1623090927.jpg"
+            "http://medias.musimundo.com/medias/00420002-143723-143723-01-143723-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w1ODg1MnxpbWFnZS9qcGVnfGhiMy9oMzMvMTAyOTQ3NjgwNzQ3ODIvMDA0MjAwMDItMTQzNzIzLTE0MzcyM18wMS0xNDM3MjNfMDEuanBnX3NpemU1MTV8OWU4Mzc0ODY5NmJmZjdjNWNhYWRlMTY2YmRjMzViYTI0YzVkMGRkMjIyNTZhYTgzZjNhZmNkM2UyNGY0YTc1Ng"
         ],
-        reviews: []
+        categoryId: 11,
+        category: {
+        name: "Notebook",
+        id: 11,
+        }
     },
     {
     id: 7,
-    name: "Altos del Plata Chardonnay 750 ml",
-    stock: 89,
-    cost: 490,
-    description: "Altos del Plata Chardonnay pertenece a la bodega Terrazas de los Andes. Su vino es de color amarillo dorado con destellos verdes. Su perfil fresco y frutado revela notas a flores blancas como jazmín y aromas a pera, durazno blanco y ananá. Acompañan sutiles notas tostadas y dulces como vainilla y miel. Presenta ligeros toques tostados y una acidez persistente.",
-    capacity: 750,
+    name: "AURICULARES POLAROID PBT103",
+    stock: 25,
+    cost: 990,
+    description: "Marca: Polaroid, Modelo: PBT103 Color: Negro, Inalámbrico para la máxima potabilidad, Conéctese mediante Bluetooth, Orejeras acolchadas para máxima comodidad, Controles en auriculares, Diadema ajustable para una posición perfecta, Micrófono incorporado, Batería de litio recargable incorporada, Hasta 6 horas de reproducción y hasta 5 horas de conversación.",
     image: [
-        "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316117/BodegasDelSur/01_1623084032.jpg"
+        "https://lidernotebooks.com.ar/wp-content/uploads/2022/01/polaroid-100x100-1-300x300.jpg"
     ],
-    reviews: []
+    categoryId: 22,
+    category: {
+    name: "Accesorios",
+    id: 22,
+    }
     },
     {
         id: 8,
-        name: "Altos del Plata Malbec 375 ml",
-        stock: 100,
-        cost: 300,
+        name: "MOUSE GAMER PHILIPS G201",
+        stock: 26,
+        cost: 1890,
         description: "Altos del Plata Malbec pertenece a la bodega Terrazas de los Andes. Su vino es de color rojo con destellos morados. Predomina la presencia de aromas a fruta negra como ciruela y mora en armonía con un toque tostado. Se distinguen notas especiadas a pimienta blanca.",
-        capacity: 375,
+
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316127/BodegasDelSur/01_1626713403.jpg"
+            "https://lidernotebooks.com.ar/wp-content/uploads/2022/01/164902-600x600.jpg"
         ],
-        reviews: []
+        categoryId: 22,
+        category: {
+        name: "Accesorios",
+        id: 22,
+        }
     },
     {
         id: 9,
-        name: "Altos del Plata Malbec 750 ml",
-        stock: 100,
-        cost: 490,
-        description: "Altos del Plata Malbec pertenece a la bodega Terrazas de los Andes. Su vino es de color rojo con destellos morados. Predomina la presencia de aromas a fruta negra como ciruela y mora en armonía con un toque tostado. Se distinguen notas especiadas a pimienta blanca.",
-        capacity: 750,
+        name: "TECLADO LOGITECH K230",
+        stock: 10,
+        cost: 2490,
+        description: "Este pequeño teclado tiene todas las teclas estándar, con lo que ahorrará espacio sin que le falte nada. Libertad de movimiento La fiable conexión inalámbrica permite trabajar o jugar hasta a 10 metros de distancia sin apenas retrasos ni interrupciones. Cifrado AES de 128 bits Ayuda a proteger la información transmitida del teclado al receptor, con uno de los niveles más elevados de cifrado de datos.",
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316098/BodegasDelSur/01_1605808301.png"
+            "http://medias.musimundo.com/medias/00011272-165232-165232-01.png-165232-01.png-size515?context=bWFzdGVyfGltYWdlc3wxNTk5MDl8aW1hZ2UvcG5nfGgxYS9oNTMvMTAzMDI3NzY5MzQ0MzAvMDAwMTEyNzItMTY1MjMyLTE2NTIzMl8wMS5wbmctMTY1MjMyXzAxLnBuZ19zaXplNTE1fDRmZTJjNmUyNWU2YmM4MTA5OWU5YWUzOTI1OTgxNjk0ZWRhMWVlNjlkYzI5Mjc1MWUyNWI4ZWM2NmZlZDhiMDY"
         ],
-        reviews: []
+        categoryId: 22,
+        category: {
+        name: "Accesorio",
+        id: 22,
+        }
     },
     {
         id: 10,
         name: "Amareto Disaronno 700 ml",
-        stock: 100,
-        cost: 3150,
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
-        capacity: 700,
+        stock: 7,
+        cost: 2364,
+        description: "Teclado gamer. Las teclas del teclado para gaming Scorpion K220 tienen la mitad de altura que un teclado regular y duran hasta 2 millones de pulsaciones. Mejora muchisimo la experiencia de gaming de los nuevos aficionados. Teclado con diseno resistente y resistente a los liquidos. Interfaz USB. Tipo de teclas concavo. Teclas de funcion 12 (8 de audio, 4 de internet). Retroiluminacion brillante de 7 colores. Tecla de inicio de Windows. Longitud del cable 1.5m. Requisitos del sistema Windows 7, 8, 8.1, 10 o posterior.",
         image: [
-            "https://res.cloudinary.com/bodegas-del-sur/image/upload/v1631316082/BodegasDelSur/01_1600449560.jpg"
+            "http://medias.musimundo.com/medias/00524000-145767-145767-01-145767-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w2OTk3MXxpbWFnZS9qcGVnfGg5YS9oZmIvMTAzNjE3NDM1MDc0ODYvMDA1MjQwMDAtMTQ1NzY3LTE0NTc2N18wMS0xNDU3NjdfMDEuanBnX3NpemU1MTV8ZDdhODVmYjQwYjFjZmYyZGIyYTdjNDg2ZWJiNzNmZWFhYzBlMDMzZjk3MTFjZGVkN2FhZmRkNjgzMDMzYmQ1YQ"
         ],
-        reviews: []
+        categoryId: 22,
+        category: {
+        name: "Accesorio",
+        id: 22,
+        }
     }
 ];
 
-module.exports = {
+export default {
     products,
 }
