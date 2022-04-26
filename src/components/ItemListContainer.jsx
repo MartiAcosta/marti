@@ -9,7 +9,7 @@ const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
     const { idCategory } = useParams();
 
-    console.log(idCategory);
+    //console.log(idCategory);
 
     //componentDidUpdate
     useEffect(() => {
