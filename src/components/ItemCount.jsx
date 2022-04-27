@@ -3,7 +3,7 @@ import { Add, Remove } from '@material-ui/icons';
 import { useEffect, useReducer } from 'react';
 import { ProductAmountContainer, ProductAmount } from './styledComponents';
 
-const ItemCount = ({ stock = 0, initial = 1,  onAdd }) => {
+const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
     const [count, setCount] = useReducer(0);
 
     useEffect(() => {

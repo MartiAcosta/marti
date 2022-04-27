@@ -19,7 +19,7 @@ const ItemListContainer = () => {
         }))
             .then(result => setDatos(result))
             .catch(err => console.log(err))
-    }, [datos]);
+    }, [idCategory, datos]);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");

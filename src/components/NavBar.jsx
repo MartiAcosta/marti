@@ -7,7 +7,7 @@ import SearchForm from './SearchForm';
 const Navbar = () => {
     return (
         <header>
-        <AppBar position="relative">
+        <AppBar position="relative" onClick={() => alert('Hello NavBar')}>
             <Wrapper>
                 <Left>
                     <Link to='/' style={{textDecoration: "none", color: "white"}}><Logo>Pc Tecnica</Logo></Link>
